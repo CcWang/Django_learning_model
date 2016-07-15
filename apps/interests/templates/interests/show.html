@@ -1,0 +1,7 @@
+<h3>Users and Interests</h3>
+<ol>
+  {% for user in users%}
+
+    <li>  <a href="{% url 'user' user.id %}"> <h2>{{user}}</h2></a> <h4> Interest: {{user.interest}}</h4></li>
+  {% endfor %}
+</ol>
